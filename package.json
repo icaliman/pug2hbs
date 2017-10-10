@@ -1,0 +1,38 @@
+{
+  "name": "pug2hbs",
+  "version": "1.0.0",
+  "description": "Convert Pug templates to Handlebars",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/test.js && semistandard | snazzy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icaliman/pug2hbs.git"
+  },
+  "keywords": [
+    "pug",
+    "handlebars",
+    "convert"
+  ],
+  "dependencies": {
+    "commander": "2.9.0",
+    "jade-lexer": "0.0.8",
+    "jade-parser": "0.0.8",
+    "js-beautify": "^1.5.10",
+    "void-elements": "^2.0.1"
+  },
+  "devDependencies": {
+    "handlebars": "^3.0.3",
+    "jade": "^1.11.0",
+    "semistandard": "^7.0.5",
+    "snazzy": "^3.0.0",
+    "tape": "^4.0.0"
+  },
+  "author": "icaliman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icaliman/pug2hbs/issues"
+  },
+  "homepage": "https://github.com/icaliman/pug2hbs#readme"
+}
