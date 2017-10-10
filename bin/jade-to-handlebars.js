@@ -33,7 +33,7 @@ if (program.out) {
 }
 
 var isJadeFile = function (fileName) {
-    return fileName.match(/(.*)\.jade$/i) !== null;
+    return fileName.match(/(.*)\.pug$/i) !== null || fileName.match(/(.*)\.jade$/i) !== null;
 };
 
 var convertFile = function (jadeFilename) {
