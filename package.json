@@ -29,6 +29,9 @@
     "snazzy": "^3.0.0",
     "tape": "^4.0.0"
   },
+  "bin": {
+    "pug2hbs": "./bin/jade-to-handlebars.js"
+  },
   "author": "icaliman",
   "license": "MIT",
   "bugs": {
