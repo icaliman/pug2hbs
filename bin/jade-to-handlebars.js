@@ -36,10 +36,10 @@ var isJadeFile = function (fileName) {
     return fileName.match(/(.*)\.pug$/i) !== null || fileName.match(/(.*)\.jade$/i) !== null;
 };
 
-var getHandlebarName = function(jadeFilename) {
-    return fileName.match(/(.*)\.pug$/i) !== null ?
-        jadeFilename.slice(0, -3) + 'hbs' :
-        jadeFilename.slice(0, -4) + 'hbs';
+var getHandlebarName = function(fileName) {
+    return (fileName.match(/(.*)\.pug$/i) !== null ?
+        fileName.slice(0, -3) + 'hbs' :
+        fileName.slice(0, -4) + 'hbs');
 }
 
 var convertFile = function (jadeFilename) {
