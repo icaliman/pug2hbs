@@ -36,8 +36,14 @@ var isJadeFile = function (fileName) {
     return fileName.match(/(.*)\.pug$/i) !== null || fileName.match(/(.*)\.jade$/i) !== null;
 };
 
+var getHandlebarName = function(jadeFilename) {
+    return fileName.match(/(.*)\.pug$/i) !== null ?
+        jadeFilename.slice(0, -3) + 'hbs' :
+        jadeFilename.slice(0, -4) + 'hbs';
+}
+
 var convertFile = function (jadeFilename) {
-    var handlebarsName = jadeFilename.slice(0, -4) + 'hbs';
+    var handlebarsName = getHandlebarName(jadeFilename);
     var file = fs.readFileSync(jadeFilename, 'utf8');
     var handlebars = toHandlebars(file, { pretty: true, filename: jadeFilename });
     
