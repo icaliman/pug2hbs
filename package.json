@@ -1,7 +1,7 @@
 {
   "name": "pug2hbs",
-  "version": "1.0.1",
-  "description": "Convert Pug templates to Handlebars",
+  "version": "1.0.2",
+  "description": "Convert Pug and Jade templates to Handlebars",
   "main": "index.js",
   "scripts": {
     "test": "tape test/test.js && semistandard | snazzy"
